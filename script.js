@@ -48,11 +48,12 @@ const friendsSFX = document.getElementById("friends-sfx");
 const soundEffects = [cancelSFX, buttonSFX, cancelNextSFX, attackSFX, enemyTurnSFX, healSFX, statUpSFX, fearAttackSFX, fearAttack2SFX];
 
 // =============================================== Disable features
-document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-function ctrlShiftKey(e, key) {
-    return e.ctrlKey && e.shiftKey && e.key.toUpperCase() === key.toUpperCase();
-};
+// document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// function ctrlShiftKey(e, key) {
+//     return e.ctrlKey && e.shiftKey && e.key.toUpperCase() === key.toUpperCase();
+// };
 
 // =============================================== sfx
 
@@ -232,16 +233,16 @@ startingBlackScreen.addEventListener("click", introClick, { once: true });
 
 document.addEventListener("keydown", function(event) {
     // disable features
-    if (
-        event.key === 'F12' ||
-        ctrlShiftKey(event, 'I') ||
-        ctrlShiftKey(event, 'J') ||
-        ctrlShiftKey(event, 'C') ||
-        (event.ctrlKey && event.key.toUpperCase() === 'U')
-    ) {
-        event.preventDefault();
-        event.stopPropagation();
-    };
+    // if (
+    //     event.key === 'F12' ||
+    //     ctrlShiftKey(event, 'I') ||
+    //     ctrlShiftKey(event, 'J') ||
+    //     ctrlShiftKey(event, 'C') ||
+    //     (event.ctrlKey && event.key.toUpperCase() === 'U')
+    // ) {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    // };
 
     // menu
     if (event.key.toLowerCase() === "e") {
