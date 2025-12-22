@@ -49,11 +49,11 @@ const soundEffects = [cancelSFX, buttonSFX, cancelNextSFX, attackSFX, enemyTurnS
 
 // =============================================== Disable features
 
-// document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-// function ctrlShiftKey(e, key) {
-//     return e.ctrlKey && e.shiftKey && e.key.toUpperCase() === key.toUpperCase();
-// };
+function ctrlShiftKey(e, key) {
+    return e.ctrlKey && e.shiftKey && e.key.toUpperCase() === key.toUpperCase();
+};
 
 // =============================================== sfx
 
@@ -76,10 +76,13 @@ function playSFX(soundIndex) {
 };
 
 function playAudioNTimes(src, playCount, delayMs) {
+    const audio = new Audio(src);
+    audio.load();
+
     for (let i = 0; i < playCount; i++) {
         setTimeout(() => {
-            const clone = new Audio(src);
-            clone.play();
+            const clone = audio.cloneNode();
+            clone.play().catch(e => console.error("Clone not found."));
         }, i * delayMs);
     }
 };
@@ -233,16 +236,16 @@ startingBlackScreen.addEventListener("click", introClick, { once: true });
 
 document.addEventListener("keydown", function(event) {
     // disable features
-    // if (
-    //     event.key === 'F12' ||
-    //     ctrlShiftKey(event, 'I') ||
-    //     ctrlShiftKey(event, 'J') ||
-    //     ctrlShiftKey(event, 'C') ||
-    //     (event.ctrlKey && event.key.toUpperCase() === 'U')
-    // ) {
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    // };
+    if (
+        event.key === 'F12' ||
+        ctrlShiftKey(event, 'I') ||
+        ctrlShiftKey(event, 'J') ||
+        ctrlShiftKey(event, 'C') ||
+        (event.ctrlKey && event.key.toUpperCase() === 'U')
+    ) {
+        event.preventDefault();
+        event.stopPropagation();
+    };
 
     // menu
     if (event.key.toLowerCase() === "e") {
