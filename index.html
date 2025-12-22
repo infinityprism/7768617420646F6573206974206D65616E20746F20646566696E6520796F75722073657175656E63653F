@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Will you change?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="./assets_images/eye-see-you.png">
+    </head>
+    <body>
+        <link rel="prefetch" as="image" href="./assets_images/dark_effect.png">
+        <div class="overlayDiv black-screen"></div>
+        <div class="grid-container">
+            <p id="homeScreenText">Do you remember?</p>
+
+            <p class="highlight center" id="turnDialogue">Text</p>
+            <p class="highlight">Press E to open/close menu<br>Press F to return</p>
+
+            <span class="dialogueBox box">
+                <p id="dialogue">What will you do?</p>
+            </span>
+
+            <span class="selectionBox box">
+                <h4>Terminal</h4>
+                <span class="option-selection">
+                <p id="fight-option">Fight</p>
+                <p id="skill-option">Skills</p>
+                <span id="skills">
+                    <p id="heal">Heal</p>
+                    <p class="hidden-skill" id="create">Create</p>
+                    <p class="hidden-skill" id="declare">Declare</p>
+                    <p class="hidden-skill" id="search">Search</p>
+                    <p class="hidden-skill" id="define">Define</p>
+                    <p class="hidden-skill" id="initialize">Initialize</p>
+                </span>
+                </span>
+                <p id="run-option">Run</p>
+            </span>
+
+            <p id="update-output">Output Value:</p>
+
+            <video autoplay loop muted disablePictureInPicture class="inactive" id="glitch-video">
+                <source src="./assets_videos/glitch effect.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay loop muted disablePictureInPicture class="seenVideo" id="dim">
+                <source src="./assets_videos/dim.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay loop muted disablePictureInPicture class="hiddenVideo" id="scratched">
+                <source src="./assets_videos/scratched.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay loop muted disablePictureInPicture class="hiddenVideo" id="seen">
+                <source src="./assets_videos/seen.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay loop muted disablePictureInPicture class="hiddenVideo" id="blinded">
+                <source src="./assets_videos/blinded.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay loop muted disablePictureInPicture class="hiddenVideo" id="uncertainty">
+                <source src="./assets_videos/uncertainty.mp4" type="video/mp4">
+            </video>
+
+            <video autoplay loop muted disablePictureInPicture class="hiddenVideo" id="watched">
+                <source src="./assets_videos/watched.mp4" type="video/mp4">
+            </video>
+
+            <span class="HPbar box" id="playerHPBox">
+                <p>Your HP</p>
+                <p id="playerBarText">100 / 100</p>
+                <progress id="playerHPBar" value="100" max="100"></progress>
+            </span>
+
+            <span class="HPbar box" id="enemyHPBox">
+                <p>Enemy HP</p>
+                <p id="enemyBarText">100 / 250</p>
+                <progress id="enemyHPBar" value="100" max="100"></progress>
+            </span>
+            
+        </div>
+
+        <audio id="thalassophobia">
+            <source src="./audio/Thalassophobia.mp3" type="audio/mpeg"> 
+        </audio>
+
+        <audio id="virtual-angel">
+            <source src="./audio/Virtual-Angel.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="sheriruth">
+            <source src="./audio/Sheriruth.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="0-something">
+            <source src="./audio/0.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="cant-do-that">
+            <source src="./audio/Cant-Do-That.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="button-sfx">
+            <source src="./audio/button.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="cancel-sfx">
+            <source src="./audio/Cancel.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="basicATK-sfx">
+            <source src="./audio/Attack.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="pianoString-sfx">
+            <source src="./audio/Piano-String.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="heal-sfx">
+            <source src="./audio/Heal.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="statUp-sfx">
+            <source src="./audio/Stat-Up.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="fearAttack-sfx">
+            <source src="./audio/Fear-Attack1.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="fearAttack2-sfx">
+            <source src="./audio/Fear-Attack2.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="friends-sfx">
+            <source src="./audio/Friendsssssss.mp3" type="audio/mpeg">
+        </audio>
+    </body>
+    <script src="script.js"></script>
+</html>
