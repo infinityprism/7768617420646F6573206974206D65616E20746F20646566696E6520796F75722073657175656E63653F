@@ -724,7 +724,7 @@ const skills = [
         preview: "Attack 3 times.",
         args: [],
         action: function attackThreeTimes() {
-            playAudioNTimes("/audio/Attack.mp3", 3, 350);
+            playAudioNTimes("./audio/Attack.mp3", 3, 350);
             registerAction("create");
             const damageDealt = baseEnemyHP * 0.05 + playerATK * 1 - enemyDEF;
             enemyHP -= damageDealt;
@@ -749,7 +749,7 @@ const skills = [
         preview: "Attack twice and deal one fixed instance of damage.",
         args: [],
         action: function attackTwice() {
-            playAudioNTimes("/audio/Attack.mp3", 3, 350);
+            playAudioNTimes("./audio/Attack.mp3", 3, 350);
             registerAction("search");
             const damageDealt = Math.floor(playerATK * 1.3);
             const totalDMG = Math.max(0, (damageDealt + 15) - enemyDEF);
