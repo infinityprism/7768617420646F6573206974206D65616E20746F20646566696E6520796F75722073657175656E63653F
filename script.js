@@ -910,10 +910,10 @@ async function battleTurn() {
         const endResult = checkBattleEnd();
         if (endResult == 'battle-end' || endResult == 'stair' || endResult == 'succumb') return;
         if (endResult == 'final') {
-            window.location.href = "https://forms.gle/SsGn8i4pvqZMmw1U9";
+            window.location.href = "https://drive.google.com/drive/folders/1U2O4e3j2JgitvZ19yRe6qH_R7HglgHpY?usp=drive_link";
             return;
         } else if (endResult == 'sheriruth') {
-            window.location.href = "https://www.google.com";
+            window.location.href = "https://forms.gle/n1BoMPwqV73TcQX28";
             return;
         };
 
@@ -927,10 +927,10 @@ async function battleTurn() {
         const endResultAfter = checkBattleEnd();
         if (endResultAfter === 'battle-end' || endResultAfter == 'stair' || endResultAfter == 'succumb') return;
         if (endResultAfter == 'final') {
-            window.location.href = "https://forms.gle/SsGn8i4pvqZMmw1U9";
+            window.location.href = "https://drive.google.com/drive/folders/1U2O4e3j2JgitvZ19yRe6qH_R7HglgHpY?usp=drive_link";
             return;
         } else if (endResultAfter == 'sheriruth') {
-            window.location.href = "https://www.google.com";
+            window.location.href = "https://forms.gle/n1BoMPwqV73TcQX28";
             return;
         };
 
