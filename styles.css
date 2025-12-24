@@ -199,8 +199,8 @@ video {
 }
 
 .box {
-    background-color: rgb(33, 18, 50);
-    border: 2px solid rgb(80, 31, 143);
+    background-color: rgb(22, 18, 48);
+    border: 2px solid rgb(80, 60, 184);
     z-index: 1;
 }
 
@@ -301,13 +301,13 @@ progress {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(33, 18, 50); 
+  background: rgb(15, 11, 48); 
 }
  
 ::-webkit-scrollbar-thumb {
-  background: rgb(71, 32, 122); 
+  background: rgb(54, 41, 124); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(57, 23, 102); 
+  background: rgb(91, 76, 174); 
 }
